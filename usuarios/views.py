@@ -89,3 +89,7 @@ def del_vars(request):
         if var in request.session:
             del request.session[var]
     return HttpResponse(status=200)
+
+def  usuarios(request):
+
+    return render(request, 'usuarios.html')
