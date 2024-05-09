@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="projeto_AOLP/cadastro/static/css/cadastro.css">
+        <link rel="stylesheet" href="{% static 'css/main2.css' %}" />
+        <title>Cadastrar-se</title>
+      </head>
+<body>
+    <form action="{% url 'cadastrando' %}" method="post">
+        <div class="container">
+          <div class="card">
+            <img src="https://i.imgur.com/255hxZK.png" alt="" class="imagen-logo">
+            {% csrf_token %}
+            <h1>Faça seu cadastro!</h1>
+    
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+    
+            <div class="label-float">
+              <label id="labelNome" for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder=" " required />
+            </div>
+    
+            <div class="label-float">
+              <label id="labelUsuario" for="usuario">Usuário</label>
+              <input type="text" id="usuario" name="usuario" placeholder=" " required />
+            </div>
+  
+            <div class="label-float">
+              <label id="labelUsuario" for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder=" " required />
+            </div>
+    
+            <div class="label-float">
+              <label id="labelSenha" for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" placeholder=" " required />
+              <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+    
+            <div class="label-float">
+              <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+              <input type="password" id="confirmSenha" placeholder=" " required />
+              
+              <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+    
+            <div class="justify-center" id="CadastrarBotao">
+              <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+  
+        </div>
+    
+      </form>
+      <script src="{% static 'js/cadastro.js' %}"></script>
+    
+</body>
+</html>

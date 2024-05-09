@@ -1,0 +1,21 @@
+<div class="container">
+    <h1> Lista de Otakus Cadastrados</h1>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>usuario</th>
+            <th>E-mail</th>
+            <th>senha</th>
+        </tr>
+        {% for usuario in usuarios %}
+        <tr>
+            <td>{{usuario.id_usuario}}</td>
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.usuario}}</td>
+            <td>{{usuario.email}}</td>
+            <td>{{usuario.senha}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

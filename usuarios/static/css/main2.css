@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(33, 33, 255),rgb(110, 110, 255),blue);
+}
+
+.container{
+    gap: 3px;
+    margin: 2vh auto;
+    width: 20vw;
+    padding: 0 5vw 5vh 5vw;
+    display: flex;
+    background-image: linear-gradient(#ffffff38, #ffffff91), url("https://imgs.search.brave.com/wHcnkH-cyC6-FrKI_7eq6qei2QsELrMhDN_TQd8Q-EE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZW5pYWMuY29tLmJy/L2hzLWZzL2h1YmZz/L0Rlc2lnbiUyMHNl/bSUyMG5vbWUlMjAt/JTIwMjAyNC0wNC0x/NFQwMDI5MDEuMjgx/LmpwZz9oZWlnaHQ9/MjAwJm5hbWU9RGVz/aWduJTIwc2VtJTIw/bm9tZSUyMC0lMjAy/MDI0LTA0LTE0VDAw/MjkwMS4yODEuanBn");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15%;
+    Border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.container .label-float label{
+    text-align: left;
+    color: black;
+    margin-top: 1vh;
+    font-weight: bolder;
+}
+
+.container .imagen-logo{
+    width: 10vw;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3vh auto;
+}
+.container .label-float{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .label-float input{
+    display: block;
+    border-radius: 15%;
+    height: 3vh;
+    border: none;
+}
+
+#CadastrarBotao{
+    margin-top: 1vh;
+}
+
+#CadastrarBotao button{
+    border: none;
+    padding: 1vw;
+    background-color: rgb(31, 247, 31);
+    border-radius: 35%;
+}
+
